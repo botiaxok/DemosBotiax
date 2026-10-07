@@ -6,7 +6,7 @@
     <title>Botiax - Demo IA Conversacional</title>
 
     <!-- Favicon -->
-  <link rel="icon" type="image/x-icon" href="botiax-favicon.ico">
+    <link rel="icon" type="image/x-icon" href="botiax-favicon.ico">
     
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -100,21 +100,26 @@
 
     <header class="w-full border-b border-white/10 bg-botiaxBlueDark/80 backdrop-blur-md sticky top-0 z-40">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-            <!-- Brand Logo -->
-            <div class="flex items-center gap-3">
-            
-      <div class="flex items-center space-x-3">
-        <img src="botiaxlogonaranja.png" alt="Botiax Logo" class="h-10 sm:h-12 w-auto object-contain" onerror="this.onerror=null; this.src='https://via.placeholder.com/180x50/332b52/ec9d04?text=BOTIAX';">
-      </div>
-            </div>
+            <!-- Brand Logo with Link -->
+            <a href="https://www.botiax.com" target="_blank" rel="noopener noreferrer" class="flex items-center space-x-3 transition hover:opacity-90">
+                <img src="botiaxlogonaranja.png" alt="Botiax Logo" class="h-10 sm:h-12 w-auto object-contain" onerror="this.onerror=null; this.src='https://via.placeholder.com/180x50/332b52/ec9d04?text=BOTIAX';">
+            </a>
 
-            <!-- Demo Status Badge -->
-            <div class="flex items-center gap-2 bg-botiaxBlue/60 border border-botiaxOrange/30 px-3.5 py-1.5 rounded-full shadow-inner">
-                <span class="relative flex h-2.5 w-2.5">
-                  <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-botiaxOrange opacity-75"></span>
-                  <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-botiaxOrange"></span>
-                </span>
-                <span class="text-xs font-semibold text-gray-200">Demo Interactiva en Vivo</span>
+            <!-- Actions & Status -->
+            <div class="flex items-center gap-3">
+                <div class="hidden sm:flex items-center gap-2 bg-botiaxBlue/60 border border-botiaxOrange/30 px-3.5 py-1.5 rounded-full shadow-inner">
+                    <span class="relative flex h-2.5 w-2.5">
+                      <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-botiaxOrange opacity-75"></span>
+                      <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-botiaxOrange"></span>
+                    </span>
+                    <span class="text-xs font-semibold text-gray-200">Demo Interactiva en Vivo</span>
+                </div>
+
+                <!-- Link to main website -->
+                <a href="https://www.botiax.com" target="_blank" rel="noopener noreferrer" class="bg-botiaxOrange hover:bg-botiaxOrangeHover text-botiaxBlueDark font-bold text-xs sm:text-sm px-4 py-2 rounded-full transition shadow-md flex items-center gap-2">
+                    <span>Ir a botiax.com</span>
+                    <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
+                </a>
             </div>
         </div>
     </header>
@@ -232,12 +237,12 @@
                         </div>
                     </div>
 
-                    <!-- Visual Arrow Indicator -->
+                    <!-- Button to Main Web -->
                     <div class="mt-8 pt-6 border-t border-white/10 text-center">
-                        <p class="text-xs text-amber-200/80 font-medium flex items-center justify-center gap-2">
-                            <i class="fa-solid fa-headset text-botiaxOrange"></i>
-                            Asistente disponible 24/7 en esta demo
-                        </p>
+                        <a href="https://www.botiax.com" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-xs text-botiaxOrange hover:underline font-semibold">
+                            <span>Conocé más soluciones en www.botiax.com</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
                     </div>
 
                 </div>
@@ -251,8 +256,8 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-gray-400">
             <p>© 2026 Botiax. Todos los derechos reservados. Soluciones en Inteligencia Artificial Conversacional.</p>
             <div class="flex items-center gap-6">
+                <a href="https://www.botiax.com" target="_blank" rel="noopener noreferrer" class="hover:text-botiaxOrange transition-colors"><i class="fa-solid fa-globe mr-1"></i> www.botiax.com</a>
                 <span class="hover:text-botiaxOrange transition-colors cursor-pointer"><i class="fa-solid fa-shield-halved mr-1"></i> Entorno Seguro</span>
-                <span class="hover:text-botiaxOrange transition-colors cursor-pointer"><i class="fa-solid fa-code mr-1"></i> Demo v2.4</span>
             </div>
         </div>
     </footer>
