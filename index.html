@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Botiax AI - Demo de Asistente Conversacional</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="botiax-favicon.ico">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brandDark: '#332b52',
+            brandDarker: '#221b3a',
+            brandOrange: '#ec9d04',
+            brandOrangeHover: '#d88e03',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body {
+      background-color: #221b3a;
+      background-image: 
+        radial-gradient(at 0% 0%, rgba(236, 157, 4, 0.12) 0px, transparent 50%),
+        radial-gradient(at 100% 100%, rgba(51, 43, 82, 0.4) 0px, transparent 50%);
+    }
+    .glass-card {
+      background: rgba(51, 43, 82, 0.6);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(236, 157, 4, 0.2);
+    }
+  </style>
+</head>
+<body class="text-slate-100 font-sans min-h-screen flex flex-col justify-between antialiased overflow-x-hidden">
+
+  <!-- HEADER CON LOGO -->
+  <header class="w-full border-b border-white/10 bg-brandDarker/80 backdrop-blur-md sticky top-0 z-40">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 h-20 flex items-center justify-between">
+      <div class="flex items-center space-x-3">
+        <img src="botiaxlogonaranja.png" alt="Botiax Logo" class="h-10 sm:h-12 w-auto object-contain" onerror="this.onerror=null; this.src='https://via.placeholder.com/180x50/332b52/ec9d04?text=BOTIAX';">
+      </div>
+      <div class="flex items-center space-x-2">
+        <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-brandOrange/20 text-brandOrange border border-brandOrange/30">
+          <span class="w-2 h-2 rounded-full bg-brandOrange mr-2 animate-pulse"></span> Demo Live
+        </span>
+      </div>
+    </div>
+  </header>
+
+  <!-- CONTENIDO PRINCIPAL / HERO -->
+  <main class="flex-grow flex items-center justify-center px-4 sm:px-6 py-12">
+    <div class="max-w-4xl mx-auto text-center space-y-8">
+      
+      <!-- BADGE -->
+      <div class="inline-flex items-center space-x-2 px-4 py-2 rounded-full bg-brandDark border border-brandOrange/30 shadow-lg text-xs sm:text-sm text-slate-300">
+        <i class="fas fa-microchip text-brandOrange"></i>
+        <span>Plataforma de Inteligencia Artificial Conversacional</span>
+      </div>
+
+      <!-- TÍTULO -->
+      <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-tight">
+        Conocé la IA conversacional de <span class="text-brandOrange">Botiax</span>
+      </h1>
+
+      <!-- SUBTÍTULO / TEXTO PRINCIPAL -->
+      <p class="text-lg sm:text-xl text-slate-300 max-w-3xl mx-auto leading-relaxed font-light">
+        Probá en vivo cómo un asistente virtual puede transformar la experiencia de tus clientes. Simple, ágil y 100% personalizado.
+      </p>
+
+      <p class="text-sm sm:text-base text-slate-400 max-w-2xl mx-auto">
+        En Botiax desarrollamos inteligencias artificiales que entienden, responden y acompañan a tus usuarios en cada interacción.
+      </p>
+
+      <!-- CARDS DE CARACTERÍSTICAS -->
+      <div class="pt-6 grid grid-cols-1 md:grid-cols-3 gap-4 text-left">
+        <!-- Item 1 -->
+        <div class="glass-card p-6 rounded-2xl shadow-xl hover:border-brandOrange/50 transition duration-300">
+          <div class="w-10 h-10 rounded-xl bg-brandOrange/10 border border-brandOrange/30 flex items-center justify-center text-brandOrange mb-4">
+            <i class="fas fa-bolt text-lg"></i>
+          </div>
+          <h3 class="font-bold text-white mb-2 text-base">Respuestas inmediatas</h3>
+          <p class="text-xs text-slate-300 leading-relaxed">
+            Atención instantánea, fluida y natural durante las 24 horas del día, los 7 días de la semana.
+          </p>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="glass-card p-6 rounded-2xl shadow-xl hover:border-brandOrange/50 transition duration-300">
+          <div class="w-10 h-10 rounded-xl bg-brandOrange/10 border border-brandOrange/30 flex items-center justify-center text-brandOrange mb-4">
+            <i class="fas fa-sliders-h text-lg"></i>
+          </div>
+          <h3 class="font-bold text-white mb-2 text-base">Adaptación a tu rubro</h3>
+          <p class="text-xs text-slate-300 leading-relaxed">
+            Entrenamos el modelo con los procesos, productos y estilo de comunicación propio de tu marca.
+          </p>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="glass-card p-6 rounded-2xl shadow-xl hover:border-brandOrange/50 transition duration-300">
+          <div class="w-10 h-10 rounded-xl bg-brandOrange/10 border border-brandOrange/30 flex items-center justify-center text-brandOrange mb-4">
+            <i class="fas fa-chart-line text-lg"></i>
+          </div>
+          <h3 class="font-bold text-white mb-2 text-base">Escalabilidad y soporte</h3>
+          <p class="text-xs text-slate-300 leading-relaxed">
+            Atendé cientos de consultas simultáneas sin perder calidad ni tiempo de respuesta.
+          </p>
+        </div>
+      </div>
+
+      <!-- CALL TO ACTION / INSTRUCCIÓN -->
+      <div class="pt-8 border-t border-white/10 flex flex-col items-center justify-center space-y-3">
+        <p class="text-sm sm:text-base font-semibold text-brandOrange flex items-center space-x-2">
+          <span>Tu marca, más cerca de tus clientes</span>
+          <i class="fas fa-arrow-right"></i>
+        </p>
+        <p class="text-xs text-slate-400">
+          Para comenzar la experiencia, interactuá con la burbuja de chat que se encuentra abajo a la derecha.
+        </p>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="w-full border-t border-white/10 py-6 text-center text-xs text-slate-500 bg-brandDarker">
+    <div class="max-w-6xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <p>&copy; 2026 Botiax. Todos los derechos reservados.</p>
+      <p class="text-slate-400">Demo Interactiva de Asistente con Inteligencia Artificial</p>
+    </div>
+  </footer>
+
+  <!-- SCRIPT DEL WEBCHAT DE BOTIAX -->
+  <script id='_1186_ws_chat' src='https://statics.botiax.com/cgc/webchat/production/widget.js' config='eyJjb25maWdJZCI6Inh4dXlsaGFyMGhhOHIycyIsIndzVG9rZW4iOiJGYmdzZFZDNnREWHV3Ti0waUVSTG81V2dzbndLRDZidzdOV3VxNGo4eGF2cmsiLCJiYWNrU2VydmVyIjoiaHR0cHM6Ly9iYWNrZW5kLmNnYy5ib3RpYXguY29tIiwid3NTZXJ2ZXIiOiJ3c3M6Ly93cy5iYWNrZW5kLmNnYy5ib3RpYXguY29tL2NoYW5uZWxzIiwiZW5hYmxlUmVjYXB0Y2hhIjp0cnVlfQ=='></script>
+
+</body>
+</html>
